@@ -16,7 +16,7 @@
 title: mmagdys|Muhammad Magdy
 email: muhammad.magdy50@gmail.com
 description: >- # This is a personal portofoli and blog for muhammad magdy,
-software engineer enthusiastic about Cyber Security, Web development.
+  software engineer enthusiastic about Cyber Security, Web development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mmagdys.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
