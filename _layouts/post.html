@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<link href="/assets/css/posts.css" rel="stylesheet">
+
+
+<div style="margin-top: 25px; margin-bottom: 25px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>{{page.title}}</h1>
+				<hr>
+				<div >
+				<!-- <div class="corner-ribbon  red shadow">Hello</div> -->
+				<!-- .ribbon{:contenteditable=>"true"} -end- -->
+				<!-- <div class="content"> -->
+<!--   <p class="ribbon">Tech</p>
+ <small>Written by {{page.author}} on {{page.date|date: "%-d %B %Y"}} | {{page.categories}} </small>
+ --><!-- </div> -->
+				</div>
+				<small>Written by {{page.author}} on {{page.date|date: "%-d %B %Y"}} | {{page.tags | join: "  "}}</small>
+				
+				<hr>
+				<main>
+					<article>
+						{{page.content}}
+					</article>
+				</main>
+
+				{% include share-bar.html %}
+
+
+			</div>
+			
+	<!-- style="background: #F2F2F2; margin-top: 100px;" -->
+			<div class="col-md-4"  style="padding-bottom: 10px;">
+				<div style="position: relative; background: #F2F2F2; margin-top: 100px; padding-top: 100px;">
+					<!-- <h3 align=center>Author</h3> -->
+					<img align="center" src="/assets/img/author/me4.jpg" class="mx-auto d-block rounded-circle img-fluid" alt="Muhammad Magdy" style="position: absolute; left:20%; width: 200px; margin-top: -200px;" >
+					<div style="padding: 10px;">
+						<p>My name is Muhammad Magdy, I am a freelance Software Engineer.</p>
+						<a href="/about">about ...</a>
+					</div>
+				</div>
+				<hr><br>
+
+				<div>
+					<div class="list-group">
+					<p href="#" class="list-group-item list-group-item-action active">Latest Posts</p>
+					{% for post in site.posts limit:3 %}
+						<a href="{{post.url}}" class="list-group-item list-group-item-action">{{post.title}}</a>
+					{% endfor %}
+					</div>
+				</div>
+				<hr><br>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
