@@ -3,7 +3,7 @@ layout: post
 title: "SQL Injection Explained"
 date:   2019-04-24 
 category: Tech
-tags: Cyber-Security We-security Web-app-security Web-vulnerability SQL-injection
+tags: Cyber-Security Web-security Web-app-security Web-vulnerability
 author: Muhammad Magdy
 permalink: /:title
 ---
