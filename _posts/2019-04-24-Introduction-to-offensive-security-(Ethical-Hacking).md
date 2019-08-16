@@ -36,5 +36,5 @@ Enumeration is the last phase before you attempt to gain access to a system. Enu
 ### 4. Expliotation
 Once you have completed the first three steps, you can move into the system hacking phase. You will recognize that things are getting much more complex and that the system hacking phase cannot be completed in a single pass. it could includes cracking passwords, escalating privileges, executing applications ...etc.
 
-### 3. Post Expliotation
+### 5. Post Expliotation
 A successful exploitation may have been to gain physical access to the oraganization network. The post execution task may be to gather up sensitive information and extract files to other machine without being caught or noticed. 
