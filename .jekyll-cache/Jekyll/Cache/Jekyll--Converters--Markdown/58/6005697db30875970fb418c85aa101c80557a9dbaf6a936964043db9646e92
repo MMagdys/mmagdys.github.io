@@ -1,0 +1,2 @@
+I"�<p>SQL injection vulnerability allows attacker to pass “injection” of a SQL statment via the input data throught the web application. A successful SQL injection attack can read, modify or delete (Insert/Update/Delete) sensitive data from the database, execute administration operations on the database (such as shutdown the DBMS) or in some cases issue commands to the operating system.</p>
+:ET
