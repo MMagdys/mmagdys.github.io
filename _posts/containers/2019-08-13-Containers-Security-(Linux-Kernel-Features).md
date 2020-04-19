@@ -2,7 +2,7 @@
 layout: post
 title: "Containers Security (Linux Kernel Features)"
 date:   2019-08-13 
-category: Tech
+category: Article
 tags: Cyber-Security Container-Security Linux-Kernel
 author: Muhammad Magdy
 permalink: /:title

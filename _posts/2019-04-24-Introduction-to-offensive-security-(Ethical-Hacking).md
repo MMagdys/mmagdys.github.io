@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Offensive Security (Ethical Hacking)"
 date:   2019-04-24 
-category: Tech
+category: Article
 tags: Cyber-Security Ethical-Hacking
 author: Muhammad Magdy
 permalink: /:title
