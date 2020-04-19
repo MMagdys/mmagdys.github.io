@@ -5,6 +5,7 @@ date:   2019-04-24
 category: Tutorial
 tags: Cyber-Security Web-security Web-app-security Web-vulnerability
 author: Muhammad Magdy
+image: /assets/posts_img/SQL Injection Explained.png
 permalink: /:title
 ---
 

@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
-<link href="/assets/css/posts.css" rel="stylesheet">
+<!-- <link href="/assets/css/posts.css" rel="stylesheet"> -->
+
+<!-- <div class="icon-bar">
+	{% include share-bar.html %}
+</div>  -->
 
 
-<div style="margin-top: 25px; margin-bottom: 25px;">
+<div style="margin-top: 25px; margin-bottom: 25px;" class="m-1">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
-				<img src="/assets/posts_img/{{page.title}}.png" style="width: 100%; border-radius: 30px 30px 0 0;">
+			<div class="col-md-8 ">
+				<img src="{{page.image}}" style="width: 100%; border-radius: 30px 30px 0 0;">
 				<hr>
 				<h1 style="color: Primary; font-weight: bold;">{{page.title}}</h1>
 				<!-- <hr> -->
@@ -30,10 +34,10 @@ layout: default
 				</main>
 
 				<hr>
+				<div class=".hidden-sm-up">
+					{% include sm-share-bar.html %}
+				</div>
 				
-				{% include share-bar.html %}
-
-
 			</div>
 			
 	<!-- style="background: #F2F2F2; margin-top: 100px;" -->
@@ -42,7 +46,7 @@ layout: default
 					<!-- <h3 align=center>Author</h3> -->
 					<img align="center" src="/assets/img/author/me4.jpg" class="mx-auto d-block rounded-circle img-fluid" alt="Muhammad Magdy" style="position: absolute; left:20%; width: 200px; margin-top: -200px;" >
 					<div style="padding: 10px;">
-						<p>My name is Muhammad Magdy, I am a Computer Engineer & Cyber Security Enthusiast.</p>
+						<p>My name is Muhammad Magdy, I am a freelancer Full-stack developer.</p>
 						<a href="#about">about ...</a>
 					</div>
 				</div>
@@ -71,7 +75,5 @@ layout: default
 h2{
 	color: #17a2b8;
 }
-
-
 
 </style>

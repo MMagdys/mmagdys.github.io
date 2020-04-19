@@ -5,6 +5,7 @@ date:   2019-04-24
 category: Article
 tags: Cyber-Security Ethical-Hacking
 author: Muhammad Magdy
+image: /assets/posts_img/Introduction to Offensive Security (Ethical Hacking).png
 permalink: /:title
 ---
 

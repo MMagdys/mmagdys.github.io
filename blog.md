@@ -55,8 +55,9 @@ title: Blog
 				<div class="col-md-4">
 				<div class="card mb-3" style="padding: 0;">
 					
-					
+					<a href="{{ post.url }}">
 					<img style="height: 200px; width: 100%; display: block;" src="/assets/posts_img/{{post.title}}.png" alt="{{post.title}}">
+					</a>
 					<div class="card-body">
 					<h3 >{{ post.title }}</h3>
 					<hr>

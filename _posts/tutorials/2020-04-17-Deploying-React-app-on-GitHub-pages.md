@@ -5,6 +5,7 @@ date:   2020-04-17
 category: Tutorial
 tags: React Web-App 
 author: Muhammad Magdy
+image: /assets/posts_img/Deploying React App on GitHub Pages.png
 permalink: /:title
 ---
 
