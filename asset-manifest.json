@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/mmagdys.github.io/static/css/main.55ee5382.chunk.css",
+    "main.js": "/mmagdys.github.io/static/js/main.5d18f16b.chunk.js",
+    "main.js.map": "/mmagdys.github.io/static/js/main.5d18f16b.chunk.js.map",
+    "runtime-main.js": "/mmagdys.github.io/static/js/runtime-main.1e31fd86.js",
+    "runtime-main.js.map": "/mmagdys.github.io/static/js/runtime-main.1e31fd86.js.map",
+    "static/js/2.db3c1308.chunk.js": "/mmagdys.github.io/static/js/2.db3c1308.chunk.js",
+    "static/js/2.db3c1308.chunk.js.map": "/mmagdys.github.io/static/js/2.db3c1308.chunk.js.map",
+    "static/js/3.538014fc.chunk.js": "/mmagdys.github.io/static/js/3.538014fc.chunk.js",
+    "static/js/3.538014fc.chunk.js.map": "/mmagdys.github.io/static/js/3.538014fc.chunk.js.map",
+    "index.html": "/mmagdys.github.io/index.html",
+    "static/css/main.55ee5382.chunk.css.map": "/mmagdys.github.io/static/css/main.55ee5382.chunk.css.map",
+    "static/js/2.db3c1308.chunk.js.LICENSE.txt": "/mmagdys.github.io/static/js/2.db3c1308.chunk.js.LICENSE.txt",
+    "static/media/Containers-Security-(Linux-Kernel-Features).png": "/mmagdys.github.io/static/media/Containers-Security-(Linux-Kernel-Features).5c111491.png",
+    "static/media/Containers-Security-(Linux-Kernel-Features).md": "/mmagdys.github.io/static/media/Containers-Security-(Linux-Kernel-Features).ebc2a380.md",
+    "static/media/Deploying-React-App-on-GitHub-Pages.md": "/mmagdys.github.io/static/media/Deploying-React-App-on-GitHub-Pages.82003413.md",
+    "static/media/Deploying-React-App-on-GitHub-Pages.png": "/mmagdys.github.io/static/media/Deploying-React-App-on-GitHub-Pages.90fdb533.png",
+    "static/media/Introduction-to-offensive-security-(Ethical-Hacking).md": "/mmagdys.github.io/static/media/Introduction-to-offensive-security-(Ethical-Hacking).09e98e5f.md",
+    "static/media/Introduction-to-offensive-security-(Ethical-Hacking).png": "/mmagdys.github.io/static/media/Introduction-to-offensive-security-(Ethical-Hacking).67a1ebf0.png",
+    "static/media/Sql-Injection-explained.png": "/mmagdys.github.io/static/media/Sql-Injection-explained.1f438b2c.png",
+    "static/media/Sql-Injection-explained.md": "/mmagdys.github.io/static/media/Sql-Injection-explained.4791a461.md",
+    "static/media/bg-masthead.2226e23d.jpg": "/mmagdys.github.io/static/media/bg-masthead.2226e23d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e31fd86.js",
+    "static/js/2.db3c1308.chunk.js",
+    "static/css/main.55ee5382.chunk.css",
+    "static/js/main.5d18f16b.chunk.js"
+  ]
+}
