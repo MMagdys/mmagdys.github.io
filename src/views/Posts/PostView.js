@@ -4,6 +4,9 @@ import { Grid } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
+import MathJax from 'react-mathjax';
+import RemarkMathPlugin from 'remark-math';
+import gfm from 'remark-gfm';
 
 import BlogSideBar from '../../components/Blog/BlogSideBar';
 
@@ -29,9 +32,29 @@ class PostView extends Component {
 
     let content = ""
     if (this.props.post) {
+
+      let cont = this.state.content
+      let props = {source:cont, plugins: [], renderers: []}
+      const newProps = {
+        ...props,
+        plugins: [
+          RemarkMathPlugin,
+          gfm
+        ],
+        renderers: {
+          ...props.renderers,
+          math: (props) => 
+            <MathJax.Node formula={props.value} />,
+          inlineMath: (props) =>
+            <MathJax.Node inline formula={props.value} />
+        }
+      };
+      
       content =  
         <div className="content">
-          <ReactMarkdown source={this.state.content} />
+          <MathJax.Provider input="tex">
+            <ReactMarkdown {...newProps} />
+          </MathJax.Provider>
         </div>
     }
     else{
