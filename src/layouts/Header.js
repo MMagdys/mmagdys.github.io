@@ -31,8 +31,9 @@ export default function ButtonAppBar() {
             </Typography> 
             <Button color="inherit"> <Link to="/" style={{textDecoration : 'none', color: 'white'}}>Home</Link> </Button>
             <Button color="inherit"> <Link to="/blog" style={{textDecoration : 'none', color: 'white'}}>Blog</Link> </Button>
-            <Button color="inherit"> <Link to="/" style={{textDecoration : 'none', color: 'white'}}>About</Link> </Button>
-            <Button color="inherit"> <Link to="/" style={{textDecoration : 'none', color: 'white'}}>Contact</Link> </Button>
+            <Button color="inherit"> <Link to="/publications" style={{textDecoration : 'none', color: 'white'}}>Publications</Link> </Button>
+            {/* <Button color="inherit"> <Link to="/" style={{textDecoration : 'none', color: 'white'}}>About</Link> </Button>
+            <Button color="inherit"> <Link to="/" style={{textDecoration : 'none', color: 'white'}}>Contact</Link> </Button> */}
             </Toolbar>
         </div>
       </AppBar>

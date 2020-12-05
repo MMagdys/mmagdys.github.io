@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import BlogView from '../views/Blog/BlogView';
 import PostView from '../views/Posts/PostView';
+import PublicationsView from '../views/Publications/PublicationsView';
 import {POSTS} from '../store/posts';
 
 
@@ -26,6 +27,7 @@ function Main() {
 			<Switch>
         <Route exact path="/blog" component={BlogView} />
         <Route exact path="/blog/:postId" component={postWithId} />
+        <Route exact path="/publications" component={PublicationsView} />
         <Redirect to="/blog" />
 
       </Switch>
