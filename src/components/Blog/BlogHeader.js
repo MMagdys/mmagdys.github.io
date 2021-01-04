@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import headerImg from '../../assets/bg-masthead.jpg';
 
 import DescriptionIcon from '@material-ui/icons/Description';
 import ComputerIcon from '@material-ui/icons/Computer';
@@ -45,7 +44,7 @@ export default function BlogHeader() {
   return (
     <div >
 
-		<Paper className={classes.mainHeader} style={{ backgroundImage: `url(${headerImg})` }}>
+		<Paper className={classes.mainHeader} style={{ backgroundImage: `url("/assets/bg-masthead.jpg")` }}>
 			<div className={classes.overlay} />
       <div className={classes.mainHeaderContent}>
         <Typography component="h1" variant="h3" color="inherit" gutterBottom>

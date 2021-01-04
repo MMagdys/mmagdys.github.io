@@ -7,7 +7,7 @@ export const PUBLICATIONS = [
             title       : "Towards Resilient Adaptive Vehicular Fog Computing",
             authors     : "M. M. Sayed, M. S. Kashkoush, M. Azab",
             venue       : " 2020 IEEE 11th Annual Information Technology, Electronics and Mobile Communica�on Conference (IEMCON)",
-            publisher   : "",
+            publisher   : "https://ieeexplore.ieee.org/document/9284836",
             pdfLink     : "",
             presentation: "https://zoom.us/rec/play/bt2nxVvNeD4IKUYcj-k_SYG-L0Sk-N-GG4whiGMWvSswBWj2F1fDoUFgkaPEpSgQOBaVVMHRulgq8WdK.LWRqHEiDgG-Sy18l?continueMode=true&_x_zm_rtaid=FrBOST76Q2K2nXFwUwsfTw.1604757538446.1f25deb2cc69420af90f9ca02b21b32e&_x_zm_rhtaid=932",
             video       : "",

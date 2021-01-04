@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     backgroundColor: '#2c3e50', 
-    padding: '2rem', 
+    padding: '1rem', 
     color: 'white'
   }
 }));
@@ -47,7 +47,7 @@ export default function ButtonAppBar() {
         </a>
 
         <Typography variant="subtitle2" gutterBottom>
-        Copyright © 2020 - mmagdys.me
+        Copyright © {new Date().getFullYear()} - mmagdys.me
       </Typography>
       </Paper>
     </div>

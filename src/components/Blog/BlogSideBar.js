@@ -6,6 +6,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import { Paper } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
+import {Link} from 'react-router-dom'
+
+import {POSTS} from '../../store/posts';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -17,8 +20,42 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function SimpleList() {
+export default function BlogSideBar(props) {
   const classes = useStyles();
+
+  const latestPosts = POSTS.slice(0,3)
+  const latestPostsList = [];
+  latestPosts.filter((post) => {
+    latestPostsList.push( 
+      <ListItem button divider key={post.id}>
+        <Link to={`/blog/${post.id}`} style={{textDecoration: 'none', color: 'black'}}> 
+          <ListItemText primary={post.title} />
+        </Link>
+      </ListItem>
+    ) 
+  })
+
+  let TAGS = [];
+  let tags
+  POSTS.map((post) => {
+    tags = post.tags.split(",");
+    for (const i in tags) {
+      if (!TAGS.includes(tags[i])) {
+        TAGS.push(tags[i]);
+      }
+    }
+  })
+
+  let tagsToView = [];
+  TAGS.filter((tag) => {
+    tagsToView.push( 
+      <ListItem button divider key={tag}>
+        <Link to={`/blog/tags/${tag.replace(" ", "_")}`} style={{textDecoration: 'none', color: 'black'}}> 
+          <ListItemText primary={tag}/>
+        </Link>
+      </ListItem>
+    ) 
+  })
 
   return (
       <div>
@@ -35,22 +72,7 @@ export default function SimpleList() {
               </div>
             }
             >
-            
-              <ListItem button divider>
-                <ListItemText primary="Cryptography" />
-              </ListItem>
-              <ListItem button divider>
-                <ListItemText primary="Web security" />
-              </ListItem>
-              <ListItem button divider>
-                <ListItemText primary="Cloud security" />
-              </ListItem>
-              <ListItem button divider>
-                <ListItemText primary="Offensive security" />
-              </ListItem>
-              <ListItem button>
-                <ListItemText primary="Web development" />
-              </ListItem>
+              {tagsToView}
             </List>
           </div>
         </Paper>
@@ -68,18 +90,7 @@ export default function SimpleList() {
               </div>
             }
             >
-              <ListItem button divider>
-                <ListItemText primary="Cryptography" />
-              </ListItem>
-              <ListItem button divider>
-                <ListItemText primary="Web Security" />
-              </ListItem>
-              <ListItem button divider>
-                <ListItemText primary="Offensive security" />
-              </ListItem>
-              <ListItem button>
-                <ListItemText primary="Web development" />
-              </ListItem>
+              {latestPostsList}
             </List>
           </div>
         </Paper>

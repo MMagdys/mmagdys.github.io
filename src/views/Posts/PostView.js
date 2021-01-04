@@ -68,8 +68,9 @@ class PostView extends Component {
           <Card >
             <CardActionArea>
               <CardMedia
-                style={{height: '400px'}}
-                image={require(`../../_posts/images/${this.props.post.id}.png`).default} 
+                style={{height: '300px'}}
+                // image={require(`../../_posts/images/${this.props.post.id}.png`).default} 
+                image={`/assets/posts/${this.props.post.id}.png`}
                 title={this.props.post.title}
               />
             </CardActionArea>

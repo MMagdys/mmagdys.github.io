@@ -2,11 +2,11 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 
 import BlogHeader from '../../components/Blog/BlogHeader';
-import BlogMain from '../../components/Blog/BlogMain'
+import BlogSearch from '../../components/Blog/BlogSearch'
 import BlogSideBar from '../../components/Blog/BlogSideBar'
 
 
-export default function BlogView() {
+export default function BlogView(props) {
 
   return (
     <div align="center">
@@ -16,7 +16,7 @@ export default function BlogView() {
 				</Grid>
 
 				<Grid item sm={9} style={{padding: '1rem'}}>
-					<BlogMain />
+					<BlogSearch posts={props.posts} tag={props.tag}/>
 				</Grid>
 
 				<Grid item sm={3} style={{padding: '1rem', paddingRight: '2rem'}}>

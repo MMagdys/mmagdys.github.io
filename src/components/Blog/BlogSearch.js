@@ -1,4 +1,5 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -6,11 +7,19 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
 import {Link} from 'react-router-dom'
+import Chip from '@material-ui/core/Chip';
+import Paper from '@material-ui/core/Paper';
 
-import {POSTS} from '../../store/posts'
+const useStyles = makeStyles((theme) => ({
+  paper: {
+      margin: theme.spacing(0,0,5,0),
+      padding: theme.spacing(1)
+  }
+}));
 
+export default function BlogSearch(props) {
 
-export default function BlogMain() {
+  const classes = useStyles();
 
   function PostCard({post}) {
     // console.log(post)
@@ -23,7 +32,6 @@ export default function BlogMain() {
               component="img"
               alt={post.title}
               height="140"
-              // image={require(`../../_posts/images/${post.id}.png`).default} 
               image={`/assets/posts/${post.id}.png`}
               title={post.title}
             />
@@ -42,19 +50,20 @@ export default function BlogMain() {
     );
   }
 
-
   let content = [];
-  POSTS.filter((post) => {
-    // console.log(<PostCard post={post} />)
-    content.push(<PostCard post={post} key={post.id}/>) 
+  props.posts.filter((post) => {
+    content.push(<PostCard post={post} key={post.id} />) 
   })
 
 
   return (
     <div align="left">
-      <Grid container spacing={3}>
-        {content}
-      </Grid>
+        <Paper className={classes.paper}>
+            <Chip label={props.tag} />
+        </Paper>
+        <Grid container spacing={3}>
+            {content}
+        </Grid>
     </div>
   );
 }

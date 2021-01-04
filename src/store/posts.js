@@ -1,5 +1,13 @@
 export const POSTS = [
     {
+        title:    "The Zerocash protocol explained",
+        date:     "2021-01-01",
+        category: "Article",
+        tags:     "Blockchain,Cryptography",
+        id:       "The-Zerocash-protocol-explained",
+        description : "Zerocash is a protocol that provides a privacy-preserving decentralized crypto-currency. Similar to Bitcoin as it has public transactions and any user has to broadcast the transaction to this network to be verified, However, differs from Bitcoin as it has a different transaction that hides the sender's address, receiver's address, and the payment amount."
+    },
+    {
         title:    "Unidirectional Off-chain Payments Channels on Bitcoin",
         date:     "2020-12-01",
         category: "Article",
@@ -19,7 +27,7 @@ export const POSTS = [
         title:    "Deploying React App on GitHub Pages",
         date:     "2020-04-17",
         category: "Tutorial",
-        tags:     "React Web-App",
+        tags:     "Web development",
         id:       "Deploying-React-App-on-GitHub-Pages",
         description : "In this tutorial, I'll show you how to deployed a React app to GitHub Pages. to those of you who don't know GitHub Pages. GitHub pages gives free hosting for static web pages."
     },
