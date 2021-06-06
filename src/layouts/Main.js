@@ -6,6 +6,7 @@ import BlogView from '../views/Blog/BlogView';
 import BlogSearch from '../views/Blog/BlogSearchView.js';
 import PostView from '../views/Posts/PostView';
 import PublicationsView from '../views/Publications/PublicationsView';
+import HomeView from '../views/Home/HomeView';
 import Home from './Home';
 import {POSTS} from '../store/posts';
 
@@ -37,7 +38,7 @@ function Main() {
         <MainLayout exact path="/blog/:postId" component={postWithId} />
         <MainLayout exact path="/blog/tags/:tagId" component={postsWithTag} />
         <MainLayout exact path="/publications" component={PublicationsView} />
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={HomeView} />
         <Redirect to="/blog" />
       </Switch>
   </div>

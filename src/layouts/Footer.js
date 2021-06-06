@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
   },
   paper: {
-    backgroundColor: '#2c3e50', 
+    backgroundColor: '#121b3e', 
     padding: '1rem', 
     color: 'white'
   }

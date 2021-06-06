@@ -63,7 +63,7 @@ export default function BlogSideBar(props) {
           <div className={classes.root}>
             <List component="nav" aria-label="posts tag"
             subheader={
-              <div style={{backgroundColor: '#2c3e50', padding: '8px'}}>
+              <div style={{backgroundColor: '#121b3e', padding: '8px'}}>
                 <ListSubheader component="div" id="nested-list-subheader">
                 <Typography variant="h6" gutterBottom style={{color: 'white'}}>
                   TAGS
@@ -81,7 +81,7 @@ export default function BlogSideBar(props) {
           <div className={classes.root}>
             <List component="nav" aria-label="main mailbox folders"
             subheader={
-              <div style={{backgroundColor: '#2c3e50', padding: '8px'}}>
+              <div style={{backgroundColor: '#121b3e', padding: '8px'}}>
                 <ListSubheader component="div" id="nested-list-subheader">
                 <Typography variant="h6" gutterBottom style={{color: 'white'}}>
                   LATEST POSTS

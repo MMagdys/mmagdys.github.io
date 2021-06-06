@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Grid from '@material-ui/core/Grid';
 
 import BlogHeader from '../../components/Blog/BlogHeader';
@@ -7,6 +7,10 @@ import BlogSideBar from '../../components/Blog/BlogSideBar'
 
 
 export default function BlogView() {
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	  }, [])
 
   return (
     <div align="center">
